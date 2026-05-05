@@ -126,4 +126,5 @@ GET    /api/admin/applications-chart
 
 ---
 
-## Live
+## Live  
+https://hire-ai-six.vercel.app/
