@@ -22,8 +22,12 @@ const app = express(); // Express app তৈরি করো
 
 // ── Middleware ──
 app.use(cors({
-  origin: process.env.CLIENT_URL || "http://localhost:5173", // React app এর URL
-  credentials: true                                          // cookies allow করবে
+  origin: [
+    "http://localhost:5173",
+    "https://hire-ai-six.vercel.app",
+    process.env.CLIENT_URL,
+  ].filter(Boolean),
+  credentials: true
 }));
 
 app.use(express.json());             // JSON body parse করবে (req.body কাজ করবে)
