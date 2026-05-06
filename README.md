@@ -128,3 +128,6 @@ GET    /api/admin/applications-chart
 
 ## Live  
 https://hire-ai-six.vercel.app/
+
+
+© 2025 RH BANDHAN. All rights reserved.
